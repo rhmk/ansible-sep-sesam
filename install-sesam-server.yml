@@ -10,5 +10,6 @@
           sesam_server: "{{ ansible_hostname }}"
 
   roles:
+    - activate-epel
     - sesam-server
 ...

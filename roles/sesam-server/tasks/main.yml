@@ -8,8 +8,15 @@
     - postgresql-server
     - java-1.8.0-openjdk
 
+- name: make sure dependancies from EPEL are installed
+  yum:
+          name: "{{ item }}"
+          state: present
+          enablerepo: epel
+
 - name: make sure sesam server is installed
   yum:
     name: "{{ sesam_server_pkg }}"
     state: present
+    enablerepo: epel
 ...
