@@ -1,0 +1,5 @@
+---
+
+sesam_client: http://download.sep.de/linux/RedHat/ppc/RHEL7/sesam_cli-4.4.3-48.rhel7.ppc64le.rpm
+sesam_server: http://download.sep.de/linux/RedHat/ppc/RHEL7/sesam_srv-4.4.3-48_pg.rhel7.ppc64le.rpm
+...

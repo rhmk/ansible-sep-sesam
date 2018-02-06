@@ -1,0 +1,14 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: Install SEP Sesam Server
+  hosts: localhost
+  remote_user: root
+  become: true
+
+  vars:
+          sesam_server: {{ ansible_hostname }}
+
+  roles:
+    - sesam-server
+...

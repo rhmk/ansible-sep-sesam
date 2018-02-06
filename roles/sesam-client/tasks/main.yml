@@ -1,0 +1,10 @@
+---
+
+- name: make sure sesam client is installed
+  yum:
+    name: {{ sesam_client }}
+    state: present
+
+# Now we need to add the client on the database server
+
+
