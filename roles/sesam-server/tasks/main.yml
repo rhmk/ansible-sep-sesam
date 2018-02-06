@@ -13,6 +13,8 @@
           name: "{{ item }}"
           state: present
           enablerepo: epel
+  with_items:
+          - nettle
 
 - name: make sure sesam server is installed
   yum:
