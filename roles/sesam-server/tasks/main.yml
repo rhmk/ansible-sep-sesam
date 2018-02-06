@@ -2,11 +2,11 @@
 
 - name: make sure sesam client is installed
   yum:
-    name: {{ item }}
+    name: "{{ item }}"
     state: present
   with_items:
     - postgresql-server
     - java-1.8.0-openjdk
-    - {{ sesam_server_pkg }}
+    - "{{ sesam_server_pkg }}"
 
-- 
+...
